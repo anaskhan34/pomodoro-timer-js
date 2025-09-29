@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <i class="fa-solid change fa-stopwatch-20 fa-bounce"></i>
+        <h2>POMODORO TIMER</h2>
+      </div>
+      <button onclick="increaseTime()">
+        <i class="fa-solid fa-caret-up fa-beat-fade"></i>
+      </button>
+      <div id="timer">25:00</div>
+      <button onclick="decreaseTime()">
+        <i class="fa-solid fa-caret-down fa-beat-fade"></i>
+      </button>
+
+      <div>
+        <button onclick="startTimer()">
+          Start <i class="fa-solid fa-play fa-beat-fade"></i>
+        </button>
+        <button onclick="stopTimer()">
+          Stop <i class="fa-solid fa-stop fa-beat-fade"></i>
+        </button>
+        <button onclick="resetTimer()">
+          Reset <i class="fa-solid fa-clock-rotate-left fa-beat-fade"></i>
+        </button>
+        <button onclick="shortBreak()">
+          Short Break <i class="fa-solid fa-mug-saucer fa-beat-fade"></i>
+        </button>
+        <button onclick="longBreak()">
+          Long Break <i class="fa-solid fa-bowl-food fa-beat-fade"></i>
+        </button>
+      </div>
+      <footer><b>< / > By M. Anas Khan</b></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
